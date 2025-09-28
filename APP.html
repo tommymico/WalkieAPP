@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Walkie Talkie Web P2P</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Walkie Talkie Web P2P</h1>
+
+  <div class="container">
+    <label for="myId">Il tuo ID:</label>
+    <input type="text" id="myId" placeholder="Inserisci il tuo ID">
+
+    <label for="peerId">ID del peer da chiamare:</label>
+    <input type="text" id="peerId" placeholder="ID peer">
+
+    <button id="callBtn">Chiama!</button>
+
+    <h3>Audio remoto:</h3>
+    <audio id="remoteAudio" autoplay></audio>
+  </div>
+
+  <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
